@@ -14,7 +14,7 @@ export class AppService {
             unitTo: convTo,
             number: num
         };
-        return this.http.post('http://localhost:8080/api/convert', requestData)
+        return this.http.post('/api/convert', requestData)
         .map((response: Response) => {
             const value = response;
             return value;
